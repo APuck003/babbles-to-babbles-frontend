@@ -87,14 +87,12 @@ function renderCartoonAndCaptions(){
                 player.round_wins += 1
                 fetchPostWins(player, randomCartoon)
                 console.log(player.round_wins)
-                if (i === 3){
+                if (i === 4){
                     renderWinner()
                 }
                 else {
                     renderJumbotron()
                 }
-
-                
             })
             captionOptions.append(p)
         }
@@ -129,6 +127,6 @@ function renderWinner(){
     let winnerImg = ce('img')
     winnerImg.setAttribute('src', winningPlayer.character_image)
     let winnerBanner = ce('h2')
-    winnerBanner.innerText = `🏆🏆🏆🏆🏆🏆 Scoring ${winningPlayer.round_wins} out of 4 rounds, ${winningPlayer.name} wins the game!🏆🏆🏆🏆🏆🏆`
+    winnerBanner.innerText = `🏆🏆🏆🏆🏆🏆 Scoring ${winningPlayer.round_wins} out of 4 rounds, ${winningPlayer.name} wins the game! 🏆🏆🏆🏆🏆🏆`
     view.append(winnerBanner, winnerImg)
 }
