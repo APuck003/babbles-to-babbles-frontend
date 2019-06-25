@@ -69,7 +69,7 @@ function choosePlayer(player){
         renderJumbotron()
     }
     else{
-        alert("Woah, 4 players only, idiot")
+        alert("Only 4 players allowed.")
     }
 }
 
