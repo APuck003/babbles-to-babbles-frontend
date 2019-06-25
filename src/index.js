@@ -61,7 +61,7 @@ const renderCharacterCards = () => {
 
 function choosePlayer(player){
     if (currentPlayers.includes(player) === true){
-        alert("choose a more original guy, plz")
+        alert("Choose a different character.")
     }
     else if(currentPlayers.length < 4){
         currentPlayers.push(player)
